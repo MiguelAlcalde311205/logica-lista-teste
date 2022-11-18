@@ -1,33 +1,27 @@
-﻿# The script of the game goes in this file.
+﻿# Script oficial do teste da lógica binária
+# Miguel Alcalde 2022
 
-# Declare characters used by this game. The color argument colorizes the
-# name of the character.
+# Declaração de personagens
 
-define e = Character("Eileen")
+define a = Character("[povname]")
+define c = Character("Círculo")
+define e = Character("Estrela")
+define q = Character("Quadrado")
+define t = Character("Triângulo")
 
 
-# The game starts here.
+# O jogo começa aqui
 
 label start:
+    "Antes do jogo começar"
+    $ povname = renpy.input("Qual é o seu nome?: ")
+    $ povname = povname.strip()
 
-    # Show a background. This uses a placeholder by default, but you can
-    # add a file (named either "bg room.png" or "bg room.jpg") to the
-    # images directory to show it.
+    "Ótimo, vamos começar o jogo então [povname]!"
 
-    scene bg room
-
-    # This shows a character sprite. A placeholder is used, but you can
-    # replace it by adding a file named "eileen happy.png" to the images
-    # directory.
-
-    show eileen happy
-
-    # These display lines of dialogue.
-
-    e "You've created a new Ren'Py game."
-
-    e "Once you add a story, pictures, and music, you can release it to the world!"
-
-    # This ends the game.
+    show est with dissolve:
+        xalign 0.5
+        yalign 0.5
+    e "Isso é um teste lol"
 
     return
