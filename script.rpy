@@ -3,14 +3,19 @@
 
 # Declaração de personagens
 
+init python:
+    cir = [0, False]
+    est = [0, False]
+    qua = [0, False]
+    tri = [0, False]
+    sixnine = False;
+
 define a = Character("[povname]")
 define c = Character("Círculo")
 define e = Character("Estrela")
 define q = Character("Quadrado")
 define t = Character("Triângulo")
 define z = Character("???")
-
-default sixnine = False
 
 # O jogo começa aqui
 
@@ -177,5 +182,15 @@ label start:
 
         a "Bom dia, Triângulo"
         t "Muito bom dia"
+
+        if sixnine:
+            c "Olha [povname] revele o que aconteceu hoje de manhã com a sala 69"
+            a "Não não, podem ficar tranquilas, eu entendo a preocupação"
+            e "Me desculpe também [povname], eu fui meio grossa com você"
+            "Ahhhh se ela for assim comigo na cama eu nunca que reclamaria"
+            a "Acontece, deve ser algo muito sério pra estar no papelzinho que eles entregam na entrada"
+            a "E foi culpa minha não ter lido ele a tempo também"
+
+        q "Mas.. e aí, o que você faz da vida [povname]?"
 
     return
