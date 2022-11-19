@@ -49,11 +49,11 @@ Se você se interessar por B e C, a lógica fica assim:
 Para testar o jogo, primeiro baixe uma cópia do [Renpy 8.0.3](https://www.renpy.org/latest.html) para o seu sistema operacional, após isso, crie um novo projeto com o nome "Logica Lista Teste", o renpy irá gerar um projeto novo para você, agora, você tem algumas opções  
 #### Usando o git
 Vá na pasta `game/` do projeto que você criou, e execute o comando  
-`git clone https://github.com/MiguelAlcalde311205/logica-lista-teste.git` para URL, ou
+`git clone https://github.com/MiguelAlcalde311205/logica-lista-teste.git` para URL, ou  
 `git clone git@github.com:MiguelAlcalde311205/logica-lista-teste.git` para SSH  
 #### Baixando o ZIP
 Pelo GitHub, você pode baixar um zip desses arquivos, se você preferir, baixe o zip e coloque os arquivos dele na pasra `game/` do seu projeto do Renpy
 
 ## Agradecimentos
-Obrigado [Bruno-Mai](https://github.com/Bruno-Mai) pela oportunidade de jogo
+Obrigado [Bruno-Mai](https://github.com/Bruno-Mai) pela oportunidade de jogo  
 Obrigado [Yashinkar](https://github.com/Yashinkar) pela ideia da lógica
