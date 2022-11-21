@@ -122,9 +122,9 @@ label start:
             z "Isso acontece, calma, nem todo mundo é tão organizada quanto você"
             "Ela parece estar se acalmando"
             e "Eu sei, eu sei, é só que ele poderia ter visto o..."
-            a "E ela começa a sussurar pra outra"
-            a "Meu deus o que que eu perdi naquela sala?"
-            a "Fiquei curioso agora, talvez um dia eu volte lá"
+            "E ela começa a sussurar pra outra"
+            "Meu deus o que que eu perdi naquela sala?"
+            "Fiquei curioso agora, talvez um dia eu volte lá"
             $ sixnine = True
        
             hide cir with dissolve
@@ -138,11 +138,7 @@ label start:
             a "Claro que não"
             "A Estrela parece aliviada"
             a "Tinha avisando no papelzinho"
-            e "Ahhhh, ainda bem que você não foi lá"
-            e "Estamos planejando algumas coisas pra sala 69"
-            e "Mas por agora, sua entrada está proibida"
-            a "Que interessante"
-            e "Enfim"
+            e "Então podemos prosseguir [povname]"
 
             jump nice
 
@@ -192,5 +188,23 @@ label start:
             a "E foi culpa minha não ter lido ele a tempo também"
 
         q "Mas.. e aí, o que você faz da vida [povname]?"
+        "Eu estava secretamente com medo dessa pergunta"
+        "Não é como se eu não fizesse nada da vida mas..."
+        "Eu não faço nada de interessante... ou produtivo..."
+        "Na verdade é só vergonha de falar pras pessoas que eu assisto anime o dia inteiro mesmo"
+        a "Olha... Eu não faço muita coisa pra ser honesto"
+        q "Ahhhh qual é, todo mundo gosta de fazer alguma coisa"
+        c "Não é possível que você não goste de fazer nada [povname]"
+        a "Eu gosto de uma coisa mas..."
+        q "Mas?"
+        e "Pode contar [povname], ninguém vai te julgar nem nada"
+        "Elas me pressionaram"
+        "E agora... Eu tô com vergonha e exitado ao mesmo tempo"
+        "Sério, eu sou seduzido muito fácil, deve ser os animes que eu assisto"
+        a "Eu... gosto de assistir anime..."
+        t "Ah~"
+        "Todas parecem meio desapontadas, menos a Triângulo, que mandou um gemido estranhaço e parece até surpresa" 
+        "Preciso voltar com a conversa"
+        "Mas... É... E aí, o que vocês gostam de fazer?"
 
     return
