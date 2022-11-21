@@ -20,6 +20,7 @@ define z = Character("???")
 # O jogo começa aqui
 
 label start:
+    stop music fadeout 2.0
     "Antes do jogo começar"
     $ povname = renpy.input("Qual é o seu nome?: ")
     $ povname = povname.strip()
@@ -206,5 +207,20 @@ label start:
         "Todas parecem meio desapontadas, menos a Triângulo, que mandou um gemido estranhaço e parece até surpresa" 
         "Preciso voltar com a conversa"
         "Mas... É... E aí, o que vocês gostam de fazer?"
+        c "Eu gosto muito de ler e dar conselho às pessoas"
+        c "Eu adoro ajudar a resolver seus problemas e fazer o seu dia melhor!"
+        q "Eu gosto de tocar piano"
+        q "Eu toco desde os 5 anos e sempre gostei muito!"
+        e "Eu adoro liderar"
+        e "Gosto de ser a líder em qualquer grupo ou projeto em que eu estou"
+        a "E você Triângulo?"
+        t "Ah~..."
+        t "Eu gosto de assistir... Anime... Também"
+        a "Huh?"
+        "Eu certamente não esperava por essa"
+        "Uma menina que assiste anime!?"
+        "Isso existe!?"
+        t "Eu disse algo errado?"
+        a "Não não... É só..."
 
     return
