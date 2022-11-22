@@ -39,6 +39,7 @@ label start:
     show papel with moveinbottom:
         xalign 0.5
         yalign 0.5
+    pause 3.0
 
     "Que sala é essa que eu estou?"
 
@@ -50,6 +51,7 @@ label start:
     show papel with moveinbottom:
         xalign 0.5
         yalign 0.5
+    pause 3.0
     
     "Putz"
     "Entrei na sala proibida"
@@ -104,7 +106,7 @@ label start:
             e "E VOCÊ LEU ELE POR ACASO?"
             "Ela começa a berrar comigo"
             a "É... eu achei que não era nada muito importante... sabe?"
-            "Nisso outras pessoas chegam para tentar acalmar a Estrela"
+            "Nisso uma menina chega pra tentar acalmar a Estrela"
             
             show cir at right:
                 yalign 0.5
@@ -128,7 +130,7 @@ label start:
             "Fiquei curioso agora, talvez um dia eu volte lá"
             $ sixnine = True
        
-            hide cir with dissolve
+            hide cir with moveoutright
 
             e "Enfim"
 
@@ -222,5 +224,94 @@ label start:
         "Isso existe!?"
         t "Eu disse algo errado?"
         a "Não não... É só..."
+
+        play sound "audio/sinal.mp3"
+        pause 3.0
+
+        e "Ahhhh justo agora que a conversa estava tão boa!"
+        c "Bom, a gente se vê amanhã então"
+        c "Até mais [povname]"
+        
+        hide cir with dissolve
+        show est with moveinleft:
+            xalign 0.0
+        show qua with moveinleft:
+            xalign 0.5
+        show tri with moveinleft:
+            xalign 1.0
+
+        e "Até amanhã [povname], espero que você tenha gostado na nossa escola"
+        a "Tchau tchau"
+        
+        hide est with dissolve
+        show qua with moveinleft:
+            xalign 0.0
+
+        q "Bom, essa é minha deixa né"
+        a "Acho que sim"
+        q "Até amanhã [povname]"
+        a "Até"
+
+        hide qua with dissolve
+        show tri with moveinleft:
+            xalign 0.5
+
+        t "Ah~"
+        t "Até... amanhã [povname]..."
+        a "Até lá"
+
+        hide tri with dissolve
+    
+        "Bom, agora só falta eu ir embora"
+        "Sair antes que seja tarde demais"
+
+        stop music fadeout 1.0
+        scene rua with dissolve
+        play music "audio/calmo.mp3"
+
+        "Achei essa escola bem animada"
+        "E acho que já fiz umas amizades interessantes"
+        "hehehehehehehehehe"
+
+        if sixnine:
+            "Mas tem uma coisa no fundo da minha cabeça"
+            "O que diabos que tem na sala 69?"
+            "Porque a Estrela ficou tão irritada que eu entrei lá?"
+            "E porque só ela e a Círculo aparentemente sabem o que aconteceu?"
+            "Um dia desses eu volto pra lá"
+
+        "Cada uma daquelas meninas tem qualidades bem interessantes"
+
+        show est at center with dissolve:
+            yalign 0.5
+        
+        "A Estrela sabe liderar e se virar por ela mesma"
+
+        hide est with dissolve
+        show cir at center with dissolve:
+            yalign 0.5
+
+        "A Círculo parece a pessoa perfeita pra ter uma conversa bem profunda e emocional"
+
+        hide cir with dissolve
+        show qua at center with dissolve:
+            yalign 0.5
+
+        "A Quadrado parece ser uma ótima companheira pra momentos íntimos também"
+
+        hide qua with dissolve
+
+        "Mas... a Triângulo"
+
+        show tri at center with dissolve:
+            yalign 0.5
+
+        "Ela assiste anime também..."
+        "Talvez eu possa assistir um com ela um dia desses"
+
+        hide tri with dissolve
+
+        "Nossa, fiquei viajando por toda a caminhada"
+        "Deixa eu entrar em casa então"
 
     return
