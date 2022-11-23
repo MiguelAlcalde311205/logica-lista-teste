@@ -16,6 +16,7 @@ define e = Character("Estrela")
 define q = Character("Quadrado")
 define t = Character("Triângulo")
 define z = Character("???")
+define b = Character("Carlos")
 
 # O jogo começa aqui
 
@@ -128,8 +129,8 @@ label start:
             "E ela começa a sussurar pra outra"
             "Meu deus o que que eu perdi naquela sala?"
             "Fiquei curioso agora, talvez um dia eu volte lá"
+
             $ sixnine = True
-       
             hide cir with moveoutright
 
             e "Enfim"
@@ -157,161 +158,190 @@ label start:
         show est with moveinleft:
             xalign 0.33
 
-        e "Então [povname], essa aqui é a Círculo"
+    e "Então [povname], essa aqui é a Círculo"
 
-        show cir with dissolve:
-            xalign 0.0
-            yalign 0.5
+    show cir with dissolve:
+        xalign 0.0
+        yalign 0.5
 
-        a "Prazer em te conhecer, Círculo"
-        c "O prazer também é meu, [povname]"
-        e "Essa aqui é a Quadrado"
+    a "Prazer em te conhecer, Círculo"
+    c "O prazer também é meu, [povname]"
+    e "Essa aqui é a Quadrado"
         
-        show qua with dissolve:
-            xalign 0.66
-            yalign 0.5
+    show qua with dissolve:
+        xalign 0.66
+        yalign 0.5
         
-        a "Olá"
-        q "Oi"
-        e "E essa aqui é a Triângulo"
+    a "Olá"
+    q "Oi"
+    e "E essa aqui é a Triângulo"
 
-        show tri with dissolve:
-            xalign 1.0
-            yalign 0.5
+    show tri with dissolve:
+        xalign 1.0
+        yalign 0.5
 
-        a "Bom dia, Triângulo"
-        t "Muito bom dia"
+    a "Bom dia, Triângulo"
+    t "Muito bom dia"
 
-        if sixnine:
-            c "Olha [povname] revele o que aconteceu hoje de manhã com a sala 69"
-            a "Não não, podem ficar tranquilas, eu entendo a preocupação"
-            e "Me desculpe também [povname], eu fui meio grossa com você"
-            "Ahhhh se ela for assim comigo na cama eu nunca que reclamaria"
-            a "Acontece, deve ser algo muito sério pra estar no papelzinho que eles entregam na entrada"
-            a "E foi culpa minha não ter lido ele a tempo também"
+    if sixnine:
+        c "Olha [povname] revele o que aconteceu hoje de manhã com a sala 69"
+        a "Não não, podem ficar tranquilas, eu entendo a preocupação"
+        e "Me desculpe também [povname], eu fui meio grossa com você"
+        "Ahhhh se ela for assim comigo na cama eu nunca que reclamaria"
+        a "Acontece, deve ser algo muito sério pra estar no papelzinho que eles entregam na entrada"
+        a "E foi culpa minha não ter lido ele a tempo também"
 
-        q "Mas.. e aí, o que você faz da vida [povname]?"
-        "Eu estava secretamente com medo dessa pergunta"
-        "Não é como se eu não fizesse nada da vida mas..."
-        "Eu não faço nada de interessante... ou produtivo..."
-        "Na verdade é só vergonha de falar pras pessoas que eu assisto anime o dia inteiro mesmo"
-        a "Olha... Eu não faço muita coisa pra ser honesto"
-        q "Ahhhh qual é, todo mundo gosta de fazer alguma coisa"
-        c "Não é possível que você não goste de fazer nada [povname]"
-        a "Eu gosto de uma coisa mas..."
-        q "Mas?"
-        e "Pode contar [povname], ninguém vai te julgar nem nada"
-        "Elas me pressionaram"
-        "E agora... Eu tô com vergonha e exitado ao mesmo tempo"
-        "Sério, eu sou seduzido muito fácil, deve ser os animes que eu assisto"
-        a "Eu... gosto de assistir anime..."
-        t "Ah~"
-        "Todas parecem meio desapontadas, menos a Triângulo, que mandou um gemido estranhaço e parece até surpresa" 
-        "Preciso voltar com a conversa"
-        "Mas... É... E aí, o que vocês gostam de fazer?"
-        c "Eu gosto muito de ler e dar conselho às pessoas"
-        c "Eu adoro ajudar a resolver seus problemas e fazer o seu dia melhor!"
-        q "Eu gosto de tocar piano"
-        q "Eu toco desde os 5 anos e sempre gostei muito!"
-        e "Eu adoro liderar"
-        e "Gosto de ser a líder em qualquer grupo ou projeto em que eu estou"
-        a "E você Triângulo?"
-        t "Ah~..."
-        t "Eu gosto de assistir... Anime... Também"
-        a "Huh?"
-        "Eu certamente não esperava por essa"
-        "Uma menina que assiste anime!?"
-        "Isso existe!?"
-        t "Eu disse algo errado?"
-        a "Não não... É só..."
+    q "Mas.. e aí, o que você faz da vida [povname]?"
+    "Eu estava secretamente com medo dessa pergunta"
+    "Não é como se eu não fizesse nada da vida mas..."
+    "Eu não faço nada de interessante... ou produtivo..."
+    "Na verdade é só vergonha de falar pras pessoas que eu assisto anime o dia inteiro mesmo"
+    a "Olha... Eu não faço muita coisa pra ser honesto"
+    q "Ahhhh qual é, todo mundo gosta de fazer alguma coisa"
+    c "Não é possível que você não goste de fazer nada [povname]"
+    a "Eu gosto de uma coisa mas..."
+    q "Mas?"
+    e "Pode contar [povname], ninguém vai te julgar nem nada"
+    "Elas me pressionaram"
+    "E agora... Eu tô com vergonha e exitado ao mesmo tempo"
+    "Sério, eu sou seduzido muito fácil, deve ser os animes que eu assisto"
+    a "Eu... gosto de assistir anime..."
+    t "Ah~"
+    "Todas parecem meio desapontadas, menos a Triângulo, que mandou um gemido estranhaço e parece até surpresa" 
+    "Preciso voltar com a conversa"
+    "Mas... É... E aí, o que vocês gostam de fazer?"
+    c "Eu gosto muito de ler e dar conselho às pessoas"
+    c "Eu adoro ajudar a resolver seus problemas e fazer o seu dia melhor!"
+    q "Eu gosto de tocar piano"
+    q "Eu toco desde os 5 anos e sempre gostei muito!"
+    e "Eu adoro liderar"
+    e "Gosto de ser a líder em qualquer grupo ou projeto em que eu estou"
+    a "E você Triângulo?"
+    t "Ah~..."
+    t "Eu gosto de assistir... Anime... Também"
+    a "Huh?"
+    "Eu certamente não esperava por essa"
+    "Uma menina que assiste anime!?"
+    "Isso existe!?"
+    t "Eu disse algo errado?"
+    a "Não não... É só..."
 
-        play sound "audio/sinal.mp3"
-        pause 3.0
+    play sound "audio/sinal.mp3"
+    pause 3.0
 
-        e "Ahhhh justo agora que a conversa estava tão boa!"
-        c "Bom, a gente se vê amanhã então"
-        c "Até mais [povname]"
+    e "Ahhhh justo agora que a conversa estava tão boa!"
+    c "Bom, a gente se vê amanhã então"
+    c "Até mais [povname]"
         
-        hide cir with dissolve
-        show est with moveinleft:
-            xalign 0.0
-        show qua with moveinleft:
-            xalign 0.5
-        show tri with moveinleft:
-            xalign 1.0
+    hide cir with dissolve
+    show est with moveinleft:
+        xalign 0.0
+    show qua with moveinleft:
+        xalign 0.5
+    show tri with moveinleft:
+        xalign 1.0
 
-        e "Até amanhã [povname], espero que você tenha gostado na nossa escola"
-        a "Tchau tchau"
+    e "Até amanhã [povname], espero que você tenha gostado na nossa escola"
+    a "Tchau tchau"
         
-        hide est with dissolve
-        show qua with moveinleft:
-            xalign 0.0
+    hide est with dissolve
+    show qua with moveinleft:
+       xalign 0.0
 
-        q "Bom, essa é minha deixa né"
-        a "Acho que sim"
-        q "Até amanhã [povname]"
-        a "Até"
+    q "Bom, essa é minha deixa né"
+    a "Acho que sim"
+    q "Até amanhã [povname]"
+    a "Até"
 
-        hide qua with dissolve
-        show tri with moveinleft:
-            xalign 0.5
+    hide qua with dissolve
+    show tri with moveinleft:
+        xalign 0.5
 
-        t "Ah~"
-        t "Até... amanhã [povname]..."
-        a "Até lá"
+    t "Ah~"
+    t "Até... amanhã [povname]..."
+    a "Até lá"
 
-        hide tri with dissolve
+    hide tri with dissolve
     
-        "Bom, agora só falta eu ir embora"
-        "Sair antes que seja tarde demais"
+    "Bom, agora só falta eu ir embora"
+    "Sair antes que seja tarde demais"
 
-        stop music fadeout 1.0
-        scene rua with dissolve
-        play music "audio/calmo.mp3"
+    stop music fadeout 1.0
+    scene rua with dissolve
+    play music "audio/calmo.mp3"
 
-        "Achei essa escola bem animada"
-        "E acho que já fiz umas amizades interessantes"
-        "hehehehehehehehehe"
+    "Achei essa escola bem animada"
+    "E acho que já fiz umas amizades interessantes"
+    "hehehehehehehehehe"
 
-        if sixnine:
-            "Mas tem uma coisa no fundo da minha cabeça"
-            "O que diabos que tem na sala 69?"
-            "Porque a Estrela ficou tão irritada que eu entrei lá?"
-            "E porque só ela e a Círculo aparentemente sabem o que aconteceu?"
-            "Um dia desses eu volto pra lá"
+    if sixnine:
+        "Mas tem uma coisa no fundo da minha cabeça"
+        "O que diabos que tem na sala 69?"
+        "Porque a Estrela ficou tão irritada que eu entrei lá?"
+        "E porque só ela e a Círculo aparentemente sabem o que aconteceu?"
+        "Um dia desses eu volto pra lá"
 
-        "Cada uma daquelas meninas tem qualidades bem interessantes"
+    "Cada uma daquelas meninas tem qualidades bem interessantes"
 
-        show est at center with dissolve:
-            yalign 0.5
+    show est at center with dissolve:
+        yalign 0.5
         
-        "A Estrela sabe liderar e se virar por ela mesma"
+    "A Estrela sabe liderar e se virar por ela mesma"
 
-        hide est with dissolve
-        show cir at center with dissolve:
-            yalign 0.5
+    hide est with dissolve
+    show cir at center with dissolve:
+        yalign 0.5
 
-        "A Círculo parece a pessoa perfeita pra ter uma conversa bem profunda e emocional"
+    "A Círculo parece a pessoa perfeita pra ter uma conversa bem profunda e emocional"
 
-        hide cir with dissolve
-        show qua at center with dissolve:
-            yalign 0.5
+    hide cir with dissolve
+    show qua at center with dissolve:
+        yalign 0.5
 
-        "A Quadrado parece ser uma ótima companheira pra momentos íntimos também"
+    "A Quadrado parece ser uma ótima companheira pra momentos íntimos também"
 
-        hide qua with dissolve
+    hide qua with dissolve
 
-        "Mas... a Triângulo"
+    "Mas... a Triângulo"
 
-        show tri at center with dissolve:
-            yalign 0.5
+    show tri at center with dissolve:
+        yalign 0.5
 
-        "Ela assiste anime também..."
-        "Talvez eu possa assistir um com ela um dia desses"
+    "Ela assiste anime também..."
+    "Talvez eu possa assistir um com ela um dia desses"
 
-        hide tri with dissolve
+    hide tri with dissolve
+    scene casa with dissolve
 
-        "Nossa, fiquei viajando por toda a caminhada"
-        "Deixa eu entrar em casa então"
+    "Nossa, fiquei viajando por toda a caminhada"
+    "Deixa eu entrar em casa então"
+
+    scene preto with wipeleft
+    scene sala with wipeleft
+
+    "Precisa dar uma organizadinha nessa casa"
+    "Aparentemente o Carlos não chegou ainda"
+    "Enfim, deixa eu ir pro meu quarto"
+
+    scene preto with wipeleft
+    scene quarto with wipeleft
+
+    "Vou dar uma dormidinha aqui"
+    "Provável que quando eu acordar o Carlos já vai estar aqui"
+
+    stop music fadeout 1.0
+    scene preto with dissolve
+    pause 3.0
+    play music "audio/calmo.mp3"
+    scene quarto tarde with dissolve
+
+    "Yawnnnnnnnnn"
+    "Bela de uma soneca"
+    "Enfim, preciso ver se o Carlos já chegou"
+
+    scene preto with wipeleft
+    scene sala tarde with wipeleft
+
+    ":)"
 
     return
