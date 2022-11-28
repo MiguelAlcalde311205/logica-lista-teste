@@ -389,4 +389,82 @@ label start:
     a "Hmmm, boa sorte com isso"
     b "Valeu"
 
+    pause 1.0
+
+    b "Enfim, eu vou trabalhar na arte agora"
+    a "Beleza"
+    b "Você não tem lição de casa não?"
+    a "Não, eles não passaram"
+    b "Então é isso"
+    b "Aproveita e pensa no que a gente vai pedir pra janta"
+    a "Tá"
+
+    hide carlos with dissolve
+
+    "E ele vai pro quarto dele"
+    "Bom, deixa eu ir pro meu"
+
+    scene preto with wipeleft
+    scene quarto tarde with wipeleft
+
+    "Hora de bater um lolzinho heheheheeee"
+
+    stop music fadeout 1.0
+    scene preto with dissolve
+    pause 5.0
+    scene quarto noite with dissolve
+
+    a "Haaaaaaaaaah"
+    "Foi uma ótima partida de lol hoje"
+    "E uma ótima comida mexicana"
+    "Mas agora é hora de dormir e ir naquela escola amanhã"
+
+    if sixnine:
+        "Também descobrir o que tem na sala 69"
+
+    stop music fadeout 1.0
+    scene preto with dissolve
+    pause 3.0
+    play music "audio/calmo.mp3"
+    scene quarto with dissolve
+
+    "yaaaaaaaaaaaaaawn"
+    "Deixa eu me arrumar pra escola antes que eu caia duro de sono"
+
+    scene preto with dissolve
+    pause 1.0
+    scene sala with dissolve
+    show carlos:
+        xalign 0.5
+        yalign 0.5
+
+    a "Tchau Carlos, até tarde!"
+    b "Até lá!"
+
+    scene preto with wipeleft
+    scene casa with wipeleft
+
+    "Vamos indo senão eu chego atrasado"
+
+    stop music fadeout 1.0
+    scene preto with dissolve
+    pause 1.0
+    play music "audio/feliz.mp3"
+    scene sala aula 2 with dissolve
+
+    "Eu chego na sala e acho uma mesa pra colocar minhas coisas"
+
+    show est with dissolve:
+        xalign 0.5
+        yalign 0.5
+
+    e "Bom dia [povname]!"
+    "E ela me abraça"
+    a "B-bom dia pra v-voc-cê tamb-bém Estrela"
+    e "E aí, o que você está achando da escola até agora?"
+    a "É uma escola bem interessante, eu tô gostando"
+    e "Que bom ouvir isso!"
+    e "Bom, a aula já vai começar então eu vou voltar pro meu lugar"
+    a "Ok"
+
     return
